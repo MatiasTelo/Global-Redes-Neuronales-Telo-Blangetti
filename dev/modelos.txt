@@ -1,0 +1,4 @@
+Esta carpeta se usará para los notebooks y scripts de desarrollo experimental
+del modelo. Aquí se incluirán los experimentos en Jupyter notebooks (model_dev.ipynb) y cualquier script que documente el proceso de exploración y
+pruebas.
+

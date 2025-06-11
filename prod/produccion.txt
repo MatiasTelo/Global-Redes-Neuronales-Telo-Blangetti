@@ -1,0 +1,15 @@
+○ app.py: Archivo principal para la aplicación web. Este script contendrá el
+código para crear la interfaz gráfica con Streamlit y usar la aplicación.
+
+○ modelo.pth: Archivo del modelo entrenado que contiene los pesos de la red
+neuronal en formato PyTorch.
+
+○ README.md: Documento de descripción del proyecto que incluye
+instrucciones claras sobre cómo clonar el repositorio, instalar las
+dependencias y ejecutar la aplicación.
+
+○ requirements.txt: Archivo con las dependencias necesarias para ejecutar el
+proyecto (e.g., PyTorch, Streamlit).
+
+○ utils.py: Archivo con funciones auxiliares utilizadas por app.py, tales como
+preprocesamiento de datos y carga del modelo.

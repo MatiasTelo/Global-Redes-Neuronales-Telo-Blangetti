@@ -175,7 +175,7 @@ class Generator3(nn.Module):
 def cargar_sprites():
     """Carga los sprites de Mario desde la carpeta de sprites."""
     sprites = {}
-    sprite_path = "Sprites"
+    sprite_path = "prod/Sprites"
     
     # Mapeo de archivos a caracteres
     sprite_mapping = {
@@ -264,12 +264,12 @@ def cargar_generadores():
     # models_path = "mod"
     
     try:
-        if os.path.exists("generador1_entrenado.pth"):
-            G1.load_state_dict(torch.load("generador1_entrenado.pth", map_location=device))
-        if os.path.exists("generador2_entrenado.pth"):
-            G2.load_state_dict(torch.load("generador2_entrenado.pth", map_location=device))
-        if os.path.exists("generador3_entrenado.pth"):
-            G3.load_state_dict(torch.load("generador3_entrenado.pth", map_location=device))
+        if os.path.exists("prod/generador1_entrenado.pth"):
+            G1.load_state_dict(torch.load("prod/generador1_entrenado.pth", map_location=device))
+        if os.path.exists("prod/generador2_entrenado.pth"):
+            G2.load_state_dict(torch.load("prod/generador2_entrenado.pth", map_location=device))
+        if os.path.exists("prod/generador3_entrenado.pth"):
+            G3.load_state_dict(torch.load("prod/generador3_entrenado.pth", map_location=device))
     except Exception as e:
         st.warning(f"No se pudieron cargar los modelos entrenados: {e}")
         st.info("Se usarán modelos con pesos aleatorios.")

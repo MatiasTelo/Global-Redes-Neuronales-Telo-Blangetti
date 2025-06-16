@@ -175,7 +175,7 @@ class Generator3(nn.Module):
 def cargar_sprites():
     """Carga los sprites de Mario desde la carpeta de sprites."""
     sprites = {}
-    sprite_path = "../data/Sprites"
+    sprite_path = "Sprites"
     
     # Mapeo de archivos a caracteres
     sprite_mapping = {
